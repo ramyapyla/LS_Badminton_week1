@@ -1,0 +1,109 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('web2ls.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+   /*  background: #d3f0c1; */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+
+}
+
+/* Header and Navigation */
+header {
+    background: #51bd0e;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu-icon {
+    display: none;
+    color:#012702;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav ul.show {
+        display: flex;
+
+    }
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.button-style {
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding for size */
+    background-color: #e9f356; /* Set background color */
+    color: rgb(59, 23, 23); /* Set text color */
+    border: none; /* Remove default border */
+    cursor: pointer; /* Add cursor pointer */
+
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+/* Hover effect (optional) */
+.button-style:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+/* Footer */
+footer {
+    background: #51bd0e;
+    color: #012702;
+    text-align: center;
+    padding: 1rem 0;
+}
